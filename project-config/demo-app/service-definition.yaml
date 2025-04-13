@@ -1,0 +1,14 @@
+# service-definition.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-service
+  namespace: production
+spec:
+  selector:
+    app: demo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5678
+
