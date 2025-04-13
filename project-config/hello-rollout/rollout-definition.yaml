@@ -22,4 +22,6 @@ spec:
       - name: demo-container
         image: hashicorp/http-echo:latest
         args: ["-text", "Welcome to Blue"]
+        ports:
+        - containerPort: 5678
 
